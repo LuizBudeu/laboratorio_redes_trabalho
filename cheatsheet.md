@@ -21,9 +21,9 @@ mosquitto_sub -h test.mosquitto.org -t "rafnak1/mote_writes"
 ```
 
 ```
-mosquitto_pub -h fd00::1 -t "rafnak1/mote_writes" -m "mensagem"
+mosquitto_pub -h fd00::1 -t "rafnak1/mote_reads" -m "mensagem"
 ```
 
 ```
-mosquitto_pub -h test.mosquitto.org -t "rafnak1/mote_writes" -m "mensagem"
+mosquitto_pub -h test.mosquitto.org -t "rafnak1/mote_reads" -m "mensagem"
 ```
