@@ -351,6 +351,8 @@ void simula_variacao_natural() {
 
 // Não controla ph e temperatura
 void simula_controle() {
+    if (umidade_ideal > umidade)
+      printf("Umidade menor que a desejada. Ligando o sprinkler!\n");
     umidade = umidade + satura_em_zero(umidade_ideal - umidade)/1.5;
 }
 
