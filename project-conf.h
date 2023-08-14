@@ -53,7 +53,7 @@
  * through MQTT_CLIENT_CONF_AUTH_TOKEN.
  */
 #ifndef MQTT_CLIENT_CONF_ORG_ID
-#define MQTT_CLIENT_CONF_ORG_ID "asdf"
+#define MQTT_CLIENT_CONF_ORG_ID "smart_farm"
 #endif
 
 /*
