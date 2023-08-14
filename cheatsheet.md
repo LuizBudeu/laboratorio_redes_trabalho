@@ -1,5 +1,9 @@
 # Comandos e notas úteis
 
+Para que o exemplo faça subscribe, é preciso mudar o `quickstart` para qualquer outra string.
+
+Quando o mote recebe um publish de um tópico no qual está inscrito, a função `pub_handler` é chamada.
+
 Entrar em `contiki-ng/examples/rpl-border-router` e executar:
 
 ```bash
@@ -29,6 +33,5 @@ mosquitto_pub -h test.mosquitto.org -t "rafnak1/mote_reads" -m "mensagem"
 ```
 
 No caso do projeto: 
-- Mote escreve em `SmartFarm/[Id do sensor]/read`
-- Mote lê em `SmartFarm/[Id do sensor]/ideal`
-- Broker: `broker.emqx.io`
+- Mote escreve um JSON em `SmartFarm/[ID do mote]/read` com temperatura, umidade e pH medidos.
+- Mote lê em `SmartFarm/[ID do mote]/ideal` valores de referência separados por vírgula.
