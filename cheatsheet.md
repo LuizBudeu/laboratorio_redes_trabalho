@@ -10,8 +10,6 @@ Entrar em `contiki-ng/examples/rpl-border-router` e executar:
 make TARGET=zoul connect-router-cooja
 ```
 
-Mudar o tópico para `rafnak1/mote_writes` na função `construct_pub_topic(void)` e para `rafnak1/mote_reads` na `construct_sub_topic(void)`
-
 ```
 mosquitto -v -c mosquitto.conf
 ```
